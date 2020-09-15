@@ -9,6 +9,10 @@
   font-style: normal;
 }
 
+:root {
+  --primary-rgb: 106, 13, 189;
+}
+
 .icon-logo:before {
   font-family: 'rapidpro';
   content: "\e600";
