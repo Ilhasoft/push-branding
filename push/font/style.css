@@ -16,6 +16,6 @@
 }
 
 .icon-logo:before {
-  font-family: 'rapidpro';
-  content: "\e600";
+  font-family: none;
+  content: url('../logo.svg');
 }
