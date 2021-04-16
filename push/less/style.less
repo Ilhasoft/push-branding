@@ -54,8 +54,14 @@ a.logo {
   }
 
   .weni-announcement-collapse {
+    line-height: 50%;
     margin-left: auto;
     margin-right: 20px;
+    transform: rotate(180deg);
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   .weni-left {
@@ -92,6 +98,10 @@ a.logo {
     font-family: 'Aleo', Roboto;
     font-size: 16px;
     min-width: 8rem;
+
+    &:focus {
+      outline: 0;
+    }
   }
 
   @media all and (max-width: 1000px) {
@@ -510,6 +520,13 @@ div[class*="shared_add_contact_groups"] {
   height: @unnnic-icon-size-ant;
 }
 
+.unnnic-icon-large {
+  display: inline-block;
+  background-color: @unnnic-color-neutral-cloudy;
+  width: @unnnic-icon-size-lg;
+  height: @unnnic-icon-size-lg;
+}
+
 .unnnic-icon-message-bubble-3 {
   mask: url('/sitestatic/brands/push/icons/messages-bubble-4.svg');
   mask-size: cover;
@@ -635,5 +652,13 @@ div[class*="shared_add_contact_groups"] {
   mask-size: cover;
 
   -webkit-mask: url('/sitestatic/brands/push/icons/expand-full-1.svg');
+  -webkit-mask-size: cover;
+}
+
+.unnnic-icon-delete-1-1 {
+  mask: url('/sitestatic/brands/push/icons/delete-1-1.svg');
+  mask-size: cover;
+
+  -webkit-mask: url('/sitestatic/brands/push/icons/delete-1-1.svg');
   -webkit-mask-size: cover;
 }
