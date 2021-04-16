@@ -3,12 +3,9 @@
 @import "./variables.less";
 
 #splash {
-  margin-top: -50px;
-  background: url('/sitestatic/brands/push/splash.jpg') 0px 0px !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 0px;
-  padding-bottom: 40%;
+  content: url('/sitestatic/brands/push/splash.svg') !important;
+  width: 80%;
+  margin: 10% auto;
 
   h1.description {
     color: #f3f3f3;
@@ -44,6 +41,114 @@ a.logo {
   margin-left: 20px;
   margin-top: 20px;
   font-size: 50px;
+}
+
+// Weni Announcement
+
+.weni-announcement {
+
+  background-color: #CDF2F2;
+
+  .weni-announcement-container {
+    justify-content: center;
+  }
+
+  .weni-announcement-collapse {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .weni-left {
+    padding: 1rem 0.5rem;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Aleo', Roboto;
+    letter-spacing: 0.03em;
+    box-sizing: content-box;
+    white-space: nowrap;
+    margin-left: auto;
+  }
+
+  .weni-right {
+    padding: 1rem 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+  }
+
+  .weni-divider {
+    width: 1px;
+    margin: 1rem 0 1rem 1rem;
+    background-color: black;
+  }
+
+  .weni-button {
+    background-color: #128982;
+    align-self: center;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    color: whitesmoke;
+    letter-spacing: 0.02em;
+    font-weight: 700;
+    font-family: 'Aleo', Roboto;
+    font-size: 16px;
+    min-width: 8rem;
+  }
+
+  @media all and (max-width: 1000px) {
+
+    .weni-announcement-container {
+      justify-content: unset;
+      margin: 0 25vw;
+    }
+
+    .weni-announcement-collapse {
+      margin-left: unset;
+      right: 20px;
+    }
+
+    .weni-left {
+      margin: 0;
+    }
+
+    .weni-right {
+      display: none;
+    }
+
+    .weni-button {
+      margin: 0rem 1rem;
+    }
+  }
+
+}
+
+.org-header {
+  &.collapsed {
+    top: -7px !important;
+  }
+
+  top: 3.7rem !important;
+}
+
+.logo {
+  top: auto !important;
+}
+
+#menu {
+
+  top: calc(40px + 3.7rem) !important;
+
+  @media all and (max-width: 767px) {
+    top: calc(50px + 3.7rem) !important;
+  }
+
+  &.collapsed {
+    top: calc(40px) !important;
+
+    @media all and (max-width: 767px) {
+      top: calc(50px) !important;
+    }
+  }
+
 }
 
 // UNNNIC EDITOR MODIFICATIONS
