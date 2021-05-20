@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'rapidpro';
-  src:  url('fonts/rapidpro.eot?ff6soe');
-  src:  url('fonts/rapidpro.eot?ff6soe#iefix') format('embedded-opentype'),
+  src: url('fonts/rapidpro.eot?ff6soe');
+  src: url('fonts/rapidpro.eot?ff6soe#iefix') format('embedded-opentype'),
     url('fonts/rapidpro.ttf?ff6soe') format('truetype'),
     url('fonts/rapidpro.woff?ff6soe') format('woff'),
     url('fonts/rapidpro.svg?ff6soe#rapidpro') format('svg');
@@ -10,10 +10,12 @@
 }
 
 :root {
-  --primary-rgb: 35, 24, 89;
+  --primary-rgb: 0, 158, 150;
+  --focus-rgb: 0, 222, 210;
+  --widget-box-shadow-focused: 0 0 0 3px rgba(0, 222, 210, .45);
 }
 
 .icon-logo:before {
-  font-family: 'rapidpro';
-  content: "\e600";
+  font-family: none;
+  content: url('../logo.svg');
 }
