@@ -213,6 +213,70 @@ div[class*="shared_add_contact_groups"] {
 
 // UNNNIC RAPIDPRO MODIFICATIONS
 
+// Maintenance
+
+.unnnic-maintenance {
+  height: 100%;
+
+  &__image {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  &__content-container {
+    display: flex;
+    height: inherit;
+    align-items: center;
+
+    &__content {
+      margin-left: 10%;
+      max-width: 440px;
+      font-family: @unnnic-font-family-primary;
+      font-weight: @unnnic-font-weight-regular;
+
+      &__title {
+        font-size: @unnnic-font-size-title-md;
+        line-height: calc(@unnnic-font-size-title-md + @unnnic-line-height-md);
+        color: @unnnic-color-neutral-darkest;
+        margin-bottom: @unnnic-spacing-stack-xs;
+      }
+
+      &__description {
+        font-size: @unnnic-font-size-body-lg;
+        line-height: calc(@unnnic-font-size-body-lg + @unnnic-line-height-md);
+        color: @unnnic-color-neutral-cloudy;
+        margin-bottom: @unnnic-spacing-stack-md;
+      }
+
+      &__refresh-button {
+        display: flex;
+        max-width: 256px;
+        outline: none;
+        cursor: pointer;
+        border: @unnnic-border-width-thinner solid @unnnic-color-neutral-clean;
+        background-color: rgba(226, 230, 237, 0.16);
+        border-radius: @unnnic-border-radius-sm;
+        padding: @unnnic-spacing-squish-xs;
+        align-items: center;
+
+        font-size: @unnnic-font-size-body-lg;
+        color: @unnnic-color-neutral-dark;
+
+        &__icon {
+          margin-right: @unnnic-spacing-inline-xs;
+        }
+
+        &:hover:enabled {
+          border-color: transparent;
+        }
+      }
+    }
+  }
+
+}
+
 // Menu override
 #unnnic-menu {
 
@@ -652,3 +716,44 @@ div[class*="shared_add_contact_groups"] {
   -webkit-mask: url('/sitestatic/brands/push/icons/keyboard-arrow-left-1.svg');
   -webkit-mask-size: cover;
 }
+
+.unnnic-button-refresh-arrow-1 {
+  mask: url('/sitestatic/brands/push/icons/button-refresh-arrow-1.svg');
+  mask-size: cover;
+
+  -webkit-mask: url('/sitestatic/brands/push/icons/button-refresh-arrow-1.svg');
+  -webkit-mask-size: cover;
+}
+
+.unnnic-android-1-2 {
+  mask: url('/sitestatic/brands/push/icons/android-1-2.svg');
+  mask-size: cover;
+
+  -webkit-mask: url('/sitestatic/brands/push/icons/android-1-2.svg');
+  -webkit-mask-size: cover;
+
+  &.active {
+    mask: url('/sitestatic/brands/push/icons/android-1-1.svg');
+    mask-size: cover;
+
+    -webkit-mask: url('/sitestatic/brands/push/icons/android-1-1.svg');
+    -webkit-mask-size: cover;
+  }
+}
+
+.unnnic-gauge-dashboard-2 {
+  mask: url('/sitestatic/brands/push/icons/gauge-dashboard-2.svg');
+  mask-size: cover;
+
+  -webkit-mask: url('/sitestatic/brands/push/icons/gauge-dashboard-2.svg');
+  -webkit-mask-size: cover;
+
+  &.active {
+    mask: url('/sitestatic/brands/push/icons/gauge-dashboard-1.svg');
+    mask-size: cover;
+  
+    -webkit-mask: url('/sitestatic/brands/push/icons/gauge-dashboard-1.svg');
+    -webkit-mask-size: cover;
+  }
+}
+
