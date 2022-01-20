@@ -164,12 +164,27 @@ a.logo {
 // Weni Navigation Control
 
 .weni-navigation-control { 
-  display: flex;
-  gap: 24px;
-
   &__back { 
-    width: 32px;
-    height: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    outline: 0;
+    cursor: pointer;
+
+    .title {
+      font-family: @unnnic-font-family-secondary;
+      color: @unnnic-color-neutral-dark;
+      font-weight: @unnnic-font-weight-regular;
+      font-size: @unnnic-font-size-body-gt;
+      line-height: calc(@unnnic-font-size-body-gt + @unnnic-line-height-md);
+      margin-bottom: 0;
+      text-align: center;
+      text-decoration: underline;
+    }
+
+    .icon {
+      margin-right: @unnnic-spacing-stack-nano;
+    }
   }
 
   &__back:focus {
