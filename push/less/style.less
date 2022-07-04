@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 @import "./variables.less";
 
+
 #splash {
   content: url('/sitestatic/brands/push/splash.svg') !important;
   width: 80%;
@@ -795,3 +796,87 @@ div[class*="shared_add_contact_groups"] {
   }
 }
 
+#redirect-splash {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  font-style: normal;
+  font-weight: 400;
+  .rbackground {
+    background-image: url('/sitestatic/brands/push/Illustration.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    aspect-ratio: 3;
+    z-index: -1;
+  }
+  .rinfo {
+    margin: auto auto auto 20vw;
+    padding-bottom: 10%;
+    .rtitle {
+      margin: 0 1rem;
+      font-family: 'Aleo';
+      font-size: 24px;
+      line-height: 32px;
+      color: #3B414D;
+    }
+    .rdesc {
+      margin: 0 1rem;
+      font-family: 'Lato';
+      font-size: 16px;
+      line-height: 24px;
+      color: #67738B;
+      a {
+        text-decoration: underline;
+        color: inherit;
+      }
+    }
+  }
+  .rlogo {
+    position: absolute;
+    top: 34px;
+    left: 24px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    .rbackground {
+      aspect-ratio: 2;
+    }
+  }
+  
+  @media screen and (max-width: 990px) {
+    .rbackground {
+      aspect-ratio: 1.5;
+    }
+    .rinfo {
+      margin: auto;
+    }
+  }
+  
+  @media screen and (max-width: 644px) {
+    .rbackground {
+      aspect-ratio: 0.8;
+      background-position-x: 92%;
+    }
+    .rinfo {
+      margin-top: 20vh;
+    }
+  }
+  
+  @media screen and (max-height: 400px) {
+    .rbackground {
+      aspect-ratio: 5;
+      background-position-x: 150%;
+    }
+    .rinfo {
+      margin: 0;
+      margin-top: 3rem;
+      position: relative;
+    }
+  }
+}
