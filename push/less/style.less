@@ -1062,6 +1062,20 @@ div[class*="shared_add_contact_groups"] {
   display: flex;
   flex-direction: column;
   overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: @unnnic-spacing-inline-nano;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: @unnnic-color-neutral-clean;
+    border-radius: @unnnic-border-radius-pill;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: @unnnic-color-neutral-soft;
+    border-radius: @unnnic-border-radius-pill;
+  }
 }
 
 .unnnic-modal-buttons {
@@ -1078,27 +1092,10 @@ div[class*="shared_add_contact_groups"] {
 }
 
 .onboard-scrollable {
-  overflow-y: auto;
-
   flex: 1;
-  overflow: overlay;
 
   padding-right: calc(@unnnic-spacing-inline-xs + @unnnic-spacing-inline-nano);
   width: 100%;
-
-  &::-webkit-scrollbar {
-    width: @unnnic-spacing-inline-nano;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background: @unnnic-color-neutral-clean;
-    border-radius: @unnnic-border-radius-pill;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: @unnnic-color-neutral-soft;
-    border-radius: @unnnic-border-radius-pill;
-  }
 }
 
 .onboard-list {
