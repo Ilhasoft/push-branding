@@ -211,22 +211,22 @@ a.logo {
 div[class^="PopTab_tab"],
 div[class^="PopTab_header"],
 div[class^="RevisionExplorer_button"] {
-  background: #009E96 !important;
+  background: #009E96;
 }
 
 div[class^="PopTab_popped"] {
-  border-color: #009E96 !important;
+  border-color: #009E96;
 }
 
 div[class*="RevisionExplorer_current"] {
-  background: #e6e6e6 !important;
+  background: #e6e6e6;
 }
 
 // Send message card
 div[class*="shared_msg"],
 div[class*="shared_say_msg"],
 div[class*="shared_send_msg"] {
-  background: #0080c5 !important;
+  background: #0080c5;
 }
 
 // Wait for response card
@@ -237,7 +237,7 @@ div[class*="shared_wait_for_audio"],
 div[class*="shared_wait_for_digits"],
 div[class*="shared_wait_for_images"],
 div[class*="shared_wait_for_video"] {
-  background: #005888 !important;
+  background: #005888;
 }
 
 // Save flow result card
@@ -1117,4 +1117,13 @@ div[class*="shared_add_contact_groups"] {
   textarea[readonly] {
     cursor: unset;
   }
+}
+
+[class*="Dialog_buttons"] [data-use-vue-component-wrap] {
+  display: flex;
+}
+
+// tirar o efeito de outline no botão
+[data-use-vue-component-wrap] button:focus {
+  outline: none;
 }
